@@ -1,0 +1,19 @@
+---
+- name: Install Supervisor
+  apt:
+    pkg: ['supervisor']
+    state: present
+    update_cache: true
+
+- name: Stop and disable supervisor
+  systemd:
+    name: supervisor
+    state: stopped
+    enabled: no
+
+- name: Add alvinespejo queue configuration
+  copy:
+    src: alvinespejo.conf
+    dest: /etc/supervisor/conf.d/alvinespejo.conf
+    owner: root
+    group: root
