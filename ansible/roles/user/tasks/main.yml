@@ -1,7 +1,7 @@
 ---
 - name: Create worker log directory for user alvinespejo
   file:
-    path: /var/log/alvinespejo
+    path: /var/log/alvinespejo.com
     owner: www-data
     group: www-data
     state: directory

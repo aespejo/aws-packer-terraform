@@ -11,4 +11,5 @@
     - php
     - nginx
     - queue
+    - node
     - app

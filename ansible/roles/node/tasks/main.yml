@@ -1,0 +1,4 @@
+---
+- name: Install node v16.x and npm v8.x
+  shell: curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - && sudo apt-get install -y nodejs
+

@@ -64,6 +64,7 @@
                 "ansible/roles/php",
                 "ansible/roles/nginx",
                 "ansible/roles/queue",
+                "ansible/roles/node",
                 "ansible/roles/app"
             ],
             "extra_arguments": ["--vault-password-file=/bin/cat", "--extra-vars \"infra_env={{user `infra_env`}} ansible_ec2_placement_region={{user `aws_region`}}\""],

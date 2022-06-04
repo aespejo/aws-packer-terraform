@@ -10,6 +10,6 @@
 ## echo for error
 ## echo $?
 
-# packer.exe validate -var "infra_env=staging" -var "vault_pass=secret"  cloudcasts.json
-
-# -u admin -p LLhS5jrB7ez7vdh 
+# packer validate -var "infra_env=stg" -var "vault_pass=secret"  cloudcasts.json
+# packer build -var "infra_env=stg" -var "vault_pass=secret"  cloudcasts.json
+# mysql -h "rds host link" -u "USERNAME" -p "PASSWORD" 
